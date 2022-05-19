@@ -1,0 +1,29 @@
+<h2>Listado</h2>
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">id</th>
+          <th class="h4">Name</th>
+          <th class="h4">NumberOfMembers</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let b of bands">
+          <td>
+            <dd>{{b.id}}</dd>
+          </td>
+          <td>
+            <dd>{{b.name}}</dd>
+          </td>
+          <td>
+            <dd>{{b.numberOfMembers}}</dd>
+          </td>
+        </tr>
+      </tbody>
+      <p>Average numer of members (rounded up): {{average}}</p>
+    </table>
+  </div>
+</div>
+n
